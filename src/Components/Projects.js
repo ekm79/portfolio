@@ -47,7 +47,7 @@ const Icon = Styled.img `
 const ProjectCard = Styled.div `
     display: flex;
     width: 40%;
-    height: 300px;
+    height: auto;
     border-radius: 15%;
     background: white;
     padding: 0 20px;
@@ -89,6 +89,7 @@ const ProjectText = Styled.div `
         width: 90%;
         margin: 0;
         padding-top: 0;
+        padding-bottom: 20px;
         justify-content: flex-start;
     }
 `;
@@ -111,9 +112,10 @@ class Projects extends React.Component {
                         </IconBlock>
                         <ProjectText>
                             <ProjectHead>Lambda Student Blog</ProjectHead>
-                            <StandardText>Group hackathon project utilizing React with Redux frontend and MongoDb backend</StandardText>
+                            <StandardText>Team hackathon project utilizing React/Redux frontend and MongoDb backend</StandardText>
                             <StandardText>July 2018</StandardText>
                             <ProjectLink href="http://lambda-blog.surge.sh/" target="blank">Visit project</ProjectLink>
+                            <ProjectLink href="https://github.com/ekm79/lambda-blog" target="blank">Git Repo</ProjectLink>
                         </ProjectText>
                 </ProjectCard>
 
@@ -129,6 +131,7 @@ class Projects extends React.Component {
                         <StandardText>HTML, CSS, Javascript with Bootstrap</StandardText>
                         <StandardText>May, 2018</StandardText>
                         <ProjectLink href="http://iu-project.surge.sh" target="blank">Visit project</ProjectLink>
+                        <ProjectLink href="https://github.com/ekm79/User-Interface-Project-Week" target="blank">Git Repo</ProjectLink>
                         </ProjectText>
                 </ProjectCard>
 
@@ -144,6 +147,8 @@ class Projects extends React.Component {
                         <StandardText>React with Redux frontend with Node.js backend</StandardText>
                         <StandardText>August 2018</StandardText>
                         <ProjectLink href ="http://lambda-notes-ekm.surge.sh" target="blank">Visit project</ProjectLink>
+                        <ProjectLink href="https://github.com/ekm79/lambda-notes-front-end" target="blank">Git Repo(frontend)</ProjectLink>
+                        <ProjectLink href="https://github.com/ekm79/back-end-project-week" target="blank">Git Repo(backend)</ProjectLink>
                         </ProjectText>
                 </ProjectCard>
 
@@ -156,9 +161,11 @@ class Projects extends React.Component {
                     </IconBlock>
                     <ProjectText>
                         <ProjectHead>Adventure</ProjectHead>
-                        <StandardText>Adventer game integrating React frontend with Python backend</StandardText>
+                        <StandardText>Adventure game integrating React frontend with Python backend</StandardText>
                         <StandardText>September 2018</StandardText>
                         <ProjectLink href="https://inspiring-noyce-d2055b.netlify.com" target="blank">Visit project</ProjectLink>
+                        <ProjectLink href="https://github.com/ekm79/LambdaMUD-Client" target="blank">Git Repo(frontend)</ProjectLink>
+                        <ProjectLink href="https://github.com/ekm79/LambdaMUD-Project" target="blank">Git Repo(backend)</ProjectLink>
                     </ProjectText>
                 </ProjectCard>
 
@@ -172,6 +179,7 @@ class Projects extends React.Component {
                         <StandardText>Cellular automata simulation in a React frontend</StandardText>
                         <StandardText>October 2018</StandardText>
                         <ProjectLink href="http://ekm_gameoflife.surge.sh " target="blank">Visit project</ProjectLink>
+                        <ProjectLink href="https://github.com/ekm79/Conways-Life" target="blank">Git Repo</ProjectLink>
                     </ProjectText>
                 </ProjectCard>
 
@@ -183,9 +191,10 @@ class Projects extends React.Component {
                         </IconBlock>
                     <ProjectText>
                         <ProjectHead>Vegan Michiana</ProjectHead>
-                        <StandardText>Side project integrating React/Redux frontend with WordPress backend</StandardText>
+                        <StandardText>Integrating React/Redux frontend with WordPress backend</StandardText>
                         <StandardText>January 2019</StandardText>
                         <ProjectLink href="https://vegan-michiana.surge.sh/" target="blank">Visit project</ProjectLink>
+                        <ProjectLink href="https://github.com/ekm79/vegan-michiana" target="blank">Git Repo</ProjectLink>
                     </ProjectText>
                 </ProjectCard>
 

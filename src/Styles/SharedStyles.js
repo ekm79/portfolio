@@ -1,5 +1,5 @@
 import Styled from 'styled-components';
-import {slideInLeft} from './KeyFrames';
+import { slideInLeft } from './KeyFrames';
 
 export const ListItem = Styled.li `
     color: white;
@@ -7,7 +7,9 @@ export const ListItem = Styled.li `
     font-family: 'Raleway', sans-serif;
     transform: translate(100px, 10px);
     animation: ${slideInLeft} 0.8s forwards;   
-    
+    :before{
+        content: '✓ '
+    }
 `;
 
 export const SubContainer = Styled.div `
@@ -34,6 +36,7 @@ export const List = Styled.ul `
     flex-direction: column;
     justify-content: space-around;
     height: 80%;
+    list-style: none;
 `;
 
 export const SubHead = Styled.h3 `
@@ -56,6 +59,7 @@ export const ProjectHead = Styled.h5 `
     text-align: left;
     font-family: 'Raleway', sans-serif;
     font-size: 22px;
+    margin-bottom: 15px;
     @media(max-width: 768px) [
         margin: 0;
         padding:0;
@@ -66,6 +70,7 @@ export const ProjectHead = Styled.h5 `
 export const StandardText = Styled.p `
     text-align: left;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
     @media(max-width: 500px) {
         margin: 0;
     }
