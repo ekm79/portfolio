@@ -6,12 +6,13 @@ import {Link} from 'react-router-dom';
 const ContactContainer = Styled.div `
     display: flex;
     justify-content: space-between;
-    height: 150px;
+    height: auto;
     width: 10vw;
     flex-direction: column;
     padding-bottom: 50px;
-    @media (max-width: 500px) {
+    @media (max-width: 780px) {
         flex-direction: row;
+        width: 40vw;
       }
 `;
 

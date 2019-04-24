@@ -15,11 +15,14 @@ justify-content: center;
 const HeaderContainer = Styled.div `
 display: flex;
 justify-content: space-around;
-align-items: center;
+
 width: 70%;
 height: 400px;
 border: 1px solid white;
 background: #282c34;
+overflow-y: auto;
+padding: 20px;
+
 
 `;
 

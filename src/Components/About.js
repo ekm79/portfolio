@@ -2,10 +2,16 @@ import React from 'react';
 import Styled from 'styled-components';
 
 const AboutDisplay = Styled.div `
-    display: flex
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    align-items: flex-start;
+    top: 0
     
+`;
+
+const AboutHead = Styled.div `
+    display: flex;
+    justify-content: space-between;
 `;
 
 const Text = Styled.div `
@@ -13,6 +19,7 @@ const Text = Styled.div `
     flex-direction: column;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    z-index: 2;
 `;
 
 const Paragraph = Styled.p `
@@ -20,17 +27,26 @@ const Paragraph = Styled.p `
 `;
 
 const Selfie = Styled.img `
+display: inline-block;
+align-self: flex-end;
   border-radius: 50%;
-  width: 25%;
-  height: 60%;
+  width: 180px;
+  height: auto;
+  float: right;
+  z-index: 0;
 `;
 
 const About = props => {
     return(
         <AboutDisplay>
+            <AboutHead>
             <Text>
             <h1>Erin Meredith</h1>
             <h4>Software Developer</h4>
+            </Text>
+            <Selfie src="/images/selfie.jpg" />
+            </AboutHead>
+            <Text>
             <Paragraph>Thank you for taking to the time to view my portfolio! I am an artist, writer, and vegan 
                 with an infatuation with Star Wars, Monty Python, and Disney. In 2010, I earned a bachelor's degree
                 in dietetics, but found opportunities in the field were scarce. So in 2018, I decided 
@@ -41,7 +57,6 @@ const About = props => {
                 and we'll speak about what I can do for you!
                 </Paragraph>
             </Text>
-            <Selfie src="/images/selfie.jpg" />
             
         </AboutDisplay>
     )
