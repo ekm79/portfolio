@@ -91,7 +91,7 @@ class Header extends React.Component {
           <HeaderText>
             <Name>Erin K Meredith</Name>
             <Rule></Rule>
-            <h5>Software Developer</h5>
+            <h5>Software Engineer</h5>
             <button onClick={this.toggleHidden.bind(this)}>About me</button>
           </HeaderText> }
           {!this.state.isHidden && <About toggleHidden={this.toggleHidden} isHidden={this.state.isHidden}/>}

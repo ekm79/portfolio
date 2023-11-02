@@ -48,15 +48,16 @@ const About = props => {
             </AboutHead>
             <Text>
             <Paragraph>Thank you for taking to the time to view my portfolio! In addition to being a software developer, 
-                I am a passionate vegan, artist, author, and mother of three teenaged boys. 
+                I am a passionate vegan, artist, published author, and mother of three teenaged boys. 
                 In 2010, I earned a bachelor's degree in dietetics, but found opportunities in the field were scarce. 
                 So in 2018, I decided to change direction and enrolled in the Full Stack Web Development program at 
                 Lambda School, now known as BloomTech, in pursuit of a successful and satisfying career. That led to 
                 positions as Section Lead and Teaching Assistant in their Android Development course. Immediately upon
                 completing the program, I accepted a position as a Front End UI/UX developer with Aunalytics, in South
-                Bend, Indiana. I spent over four years learning and growing with the company. Now I am seeking to 
-                strengthen and expand my skills while providing my services to an organization with values similar
-                to my own. Could it be yours? Contact me and let's speak about what I can do for you!
+                Bend, Indiana. I spent over four years learning, growing and forming relationships with the company. 
+                Now I am seeking to strengthen and expand my skills while providing my services to an organization 
+                with values similar to my own. Could it be yours? 
+                Contact me and let's speak about what I can do for you!
                 </Paragraph>
             </Text>
             
